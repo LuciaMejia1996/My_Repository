@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="es"> 
     <head>
+        <!--Clases meta etiqueta, estudiarlas-->
         <meta charset="UTF-8">
         <meta name="description" content="Pagina uno">
         <meta name="author" content="Lucia Mejia">
         <title>Mi primera pagina web</title>
     </head>
     <body>
+         <!-- del h1 al h6 -->
         <h1>Bienvenidos a mi pagina web</h1>
-        <p>
-            Esto es un pagina de prueba <br>
-            las cosas deberian poner
-        </p>
+        <h2>Titulo 2 coso</h2>
+        <!--Cabezera en el elemento Body puede haber mas de 1-->
+        <header>
+            <!--donde deberia ir el cotenido de arriba-->
+            <h1>Pagina de ejemplo</h1>
+        </header>
+
+        <!--Main solo puede existir una-->
+        <main>
+            <!--Aqui deberia ir mi contenido principal-->
+        
+            <!--Dentro del main puede haber varias secciones-->
+            <section class="body_html">
+                <p>
+                    <!--La etiqueta <P> es un elemento de bloque-->
+                    Contenido principal de la pagina
+            </section>
+            <section class="body_html">
+                <p>
+                    <!--La etiqueta <P> es un elemento de bloque-->
+                    Contenido principal de la pagina 2
+                </p>
+            </section>
+
+            <!--Señala una seccion de la web que puede actuar de forma independiente a la pagina-->
+            <article id="promotion">
+                <h2>Oferta</h2>
+            <!--Elemento que se colocara a la izquierda, tiene que tener relacion con el contenido que le rodea-->
+                <aside>
+                    <p>Si pagas 2 te llevas 3</p>
+                </aside>
+            </article>
+
+        </main>
+
+        <!--Div se usa para maquetacion de la pagina web 
+        en otras partes no se recomienda.-->
+        <div>
+            <!--seccion de la pagina a la hora de maquetar-->
+        </div>
+
+        <!--<span> solo sirve para maquetar paginas-->
+            <span>
+                <!--Seccion que se configurara de maneraa diferente-->
+            </span>
+
+        <!--Donde se pone derechos de autor u otra informacion-->
+        <footer id="contact">
+            <!--Aqui donde va lo del copyright y demas informacion-->
+            <p>
+                <!--<em> es una etiqueta inline, es para colocar cursiva-->
+                <em>Autora:</em> 
+                <!--<strong es una etiqueta inline es para colocar en negrita-->
+                <strong>Lucia Mejia</strong>
+            </p>
+        </footer>
     </body>
 </html>
