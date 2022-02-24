@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucia Mejia">
+    <title>Mi pagina web</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lucia Mejia</h1>
+        <nav>
+            <ul>
+                <li><a href="#pel">Mi top 10 peliculas</a></li>
+                <li><a href="#viaje">Mi viaje a japon</a></li>
+                <li><a href="#contact">Mandame un mensaje</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <section id="pel">
+                <h3>Mi top 10 peliculas</h3>
+                <ol>
+                    <li>El padrino</li>
+                    <li>La lista de Schinder</li>
+                    <li>El padrino parte 2</li>
+                    <li>cadena perpertua</li>
+                    <li>Pulp Ficition</li>
+                    <li>El Rey Leon</li>
+                    <li>Forrest Gump</li>
+                    <li>La vida es bella</li>
+                    <li>Gladiador</li>
+                    <li>Coco</li>
+                </ol>
+            </section>
+            <aside>
+                <img src="./pictures/me.jpeg" alt="foto personal">
+                <h2>Lucia Mejia</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a>
+            </aside>
+            <section id="viaje">
+                <h3>Mi viaje a japon</h3>
+                <img src="./pictures/home.jpg" width="200" alt="foto de japon">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque doloribus perspiciatis, <br>
+                    harum aut, expedita quaerat praesentium odit voluptate iusto earum temporibus rerum neque odio
+                    maiores modi in molestiae accusamus.<br>
+                    A porro, eligendi magni iure ut culpa aliquam maiores deleniti ducimus inventore eveniet in deserunt
+                    ipsam aperiam necessitatibus, optio quia?</p>
+            </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>
+                        <h3>Mandame un mensaje</h3>
+                    </legend>
+                    <ul>
+                        <li>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" />
+                        </li>
+                        <li>
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" id="email">
+                        </li>
+                        <li>
+                            <label for="nac">Fecha de nacimiento</label>
+                            <input type="date" name="nac" id="nac" />
+                        </li>
+                        <li>
+                            <label for="coment">Comentarios</label>
+                        </li>
+                        <li>
+                            <textarea name="coment" id="coment" cols="50" rows="10"> </textarea>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="subs" id="subs">
+                            <label for="subs">Suscribirse a las noticias</label>
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+    </footer>
+</body>
+
+</html>
