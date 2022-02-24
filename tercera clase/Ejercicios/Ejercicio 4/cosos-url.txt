@@ -1,0 +1,11 @@
+TxtNombre=lucia
+TxtCorreo=lucia%40lucia.com
+TxtUrl=https%3A%2F%2Fwww.google.com
+Txtfecha=2022-02-23
+Txthora=02%3A47
+TxTfechaHora=2022-02-04T12%3A47
+TxtMes=2022-03
+txtsemana=2022-W05
+TxtNumero=-10
+TxTtelefono=000000000
+TxtColor=%230aa1ff
