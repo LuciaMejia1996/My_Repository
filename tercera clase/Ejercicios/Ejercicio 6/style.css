@@ -35,7 +35,7 @@ table{
     width: 30em;
     height: 13em;
     font-size: 1.1em;
-    margin-left: 2em;
+    margin: 2em;
 }
 
  tr > td:nth-child(1) {
