@@ -1,0 +1,79 @@
+*{
+    margin: 0em;
+}
+
+header{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+header > h1{
+    background-color: #F795EF;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    margin-bottom: 0em;
+}
+
+h1 {
+    position: relative;
+}
+
+
+header > nav > ul {
+    background-color: #E081D9;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+
+nav > ul > li > a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav > ul > li:hover {
+    background-color: #9B0997;
+}
+
+#pel {
+    margin: 2em;
+ 
+}
+
+#pel > h3 {
+    margin-top: 0.5em;
+    font-size: 1.75em;
+    padding-left: 1.2em;
+    padding-bottom: 1em;  
+}
+
+
+#pel > ol {
+    display: grid;
+    
+}
+
+
+#pel > ol > li:nth-child(n+1):nth-child(-n+5){
+    /**background-color: red;**/
+    margin: 0.8em;
+
+}
+
+    #pel > ol > li:nth-child(n+6):nth-child(-n+10){
+    /**background-color: green;**/
+    margin: 0.8em;    
+    
+}
+
