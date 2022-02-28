@@ -1,5 +1,6 @@
 *{
     margin: 0em;
+    padding: 0;
 }
 
 header{
@@ -7,6 +8,13 @@ header{
     font-size: 1.5em;
 }
 
+/**
+## Margin con cuatro valores ##
+margin 1px(superior), 1px(inferior), 1px(izquierda), 1px(derecha)
+
+## margin con dos valores ##
+margin 1px(superior e inferior) 2px(izquierda y derecha)
+**/
 
 header > h1{
     background-color: #F795EF;
@@ -60,7 +68,7 @@ nav > ul > li:hover {
 
 
 #pel > ol {
-    display: grid;
+    /**background-color: red;**/
     
 }
 
@@ -73,7 +81,6 @@ nav > ul > li:hover {
 
     #pel > ol > li:nth-child(n+6):nth-child(-n+10){
     /**background-color: green;**/
-    margin: 0.8em;    
-    
+    margin: 0.8em;   
 }
 
