@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+
+header {
+    margin-bottom: -95px;
+}
+
+header > ul {
+    list-style-type: none;
+}
+
+header > ul > li {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header > ul > li > a:link {
+   text-decoration: none;
+   color: black;
+}
+
+
+header > img{
+    border-radius: 50%;
+    margin: 18px;
+}
+
+header > h3 {
+    font-weight: bold;
+    left: 9.5%;
+    top: -110px;
+    font-size: 2em;
+}
+
+header > h5 {
+    left: 9.5%;
+    top: -110px;
+    font-size: 1em;
+}
+
+header > ul {
+    left: 87%;
+    top: -145px;
+    list-style-type: none;
+}
+
+section#personal > h2 {
+    left: 5%;
+    top: 38px;
+    color: orange;
+}
+
+section#personal > p{
+    left: 35%;
+    width: 50%;
+    overflow: auto;
+}
+
+section#exp > h2.titule,
+section#skill > h2.titule,
+section#educ > h2.titule{
+    left: 5%;
+    color: orange;
+    top: 4em;
+}
+
+section#exp > h2.jobtitule {
+    left: 35%;
+    top: 38px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+section#exp > p.jobexplain {
+    left: 35%;
+    bottom: -35px;
+    width: 50%;
+    overflow: auto;
+}
+
+section#skill > ul {
+    left: 35%;
+    bottom: -35px;
+    
+}
+
+section#skill > ul > li{
+    margin: 1em;
+}
+
+section#educ> h2.educationtitule {
+    left: 35%;
+    top: 38px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+section#educ > p.educationexplain {
+    left: 35%;
+    bottom: -35px;
+    width: 50%;
+    overflow: auto;
+}
+
+
+

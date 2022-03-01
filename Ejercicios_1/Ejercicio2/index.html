@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 2</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <main>
+            <form action="#">
+                <section> 
+                    <h2>Personaliza tu hamburguesa</h2>
+                    <h3>Ingredientes</h3>
+                        <ul>
+                            <li>
+                                <label for="queso">Queso</label>
+                                <input type="checkbox" id="queso" name="queso">
+                            </li>
+                            <li>
+                                <label for="pimiento">Pimiento</label>
+                                <input type="checkbox" id="pimiento" name="pimiento">
+                            </li>
+                            <li>
+                                <label for="cebolla">Cebolla</label>
+                                <input type="checkbox" id="cebolla" name="cebolla">
+                            </li>
+                            <li>
+                                <label for="jamon">Jamón</label>
+                                <input type="checkbox" id="jamon" name="jamon">
+                            </li>
+                            <li>
+                                <label for="huevo">Huevo</label>
+                                <input type="checkbox" id="huevo" name="huevo">
+                            </li>
+                        </ul>
+                    <h3>Tamaño</h3>
+                        <ul>
+                            <li>
+                                <label for="tamano">Pequeña</label>
+                                <input type="radio" name="tamano" id="pequena" value="pequena">
+                            </li>
+                            <li>
+                                <label for="tamano">Mediana</label>
+                                <input type="radio" name="tamano" id="mediana" value="mediana">
+                            </li>
+                            <li>
+                                <label for="tamano">Grande</label>
+                                <input type="radio" name="tamano" id="grande" value="grande">
+                            </li>
+                        </ul>
+                </section>
+                <section>
+                    <h2>DATOS DE ENTREGA</h2>
+                        <ul>
+                            <li>
+                                <label for="nombre">Nombre</label><br>
+                                <input type="text" id="nombre" name="nombre" placeholder="Samuel Rodríguez">
+                            </li>
+                            <li>
+                                <label for="dir">Dirección</label><br>
+                                <input type="text" id="dir" name="dir" placeholder="Rúa Real, 1, A. Coruña">
+                            </li>
+                            <li>
+                                <label for="tel">Teléfono</label><br>
+                                <input type="tel" id="tel" name="tel" placeholder="919 04 23 63">
+                            </li>
+                            <li>
+                                <label for="special">Instrucciones especiales</label><br>
+                                <textarea name="special" id="special" cols="30" rows="10" placeholder="Sin tomate"></textarea>
+                            </li>
+                        </ul>
+                </section>
+                <section>
+                    <h2>Método de pago</h2>
+                    <select name="pago" id="pago">
+                        <option value="credito">Tarjeta de crédito</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="bizum">Bizum</option>
+                    </select>
+                </section>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>        
+    </body>
+</html>

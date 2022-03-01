@@ -1,0 +1,33 @@
+ul > li[data-name]{
+    /**Subrayar en rojito**/
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+ul li:nth-child(2):hover{
+    background-color: yellow;
+}
+
+ul > li.emoji:after{
+    /**Emoji cara sonriente**/
+    content: "😀";
+}
+
+
+ul > li:visited{
+    background-color: green;
+}
+
+
+ul > li:last-child::first-letter{
+    color: orange;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    text-decoration: none;
+    color: green;
+}
