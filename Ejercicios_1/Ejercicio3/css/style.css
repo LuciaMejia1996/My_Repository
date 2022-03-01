@@ -99,11 +99,16 @@ section#exp > p.jobexplain {
 section#skill > ul {
     left: 35%;
     bottom: 1em;
-    
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 section#skill > ul > li{
-    margin: 1em;
+    margin: 0em;
+    font-size: 1em;
+    display: inline-block;
+    width: 30em;
+    overflow: auto;
 }
 
 section#educ> h2.educationtitule {
