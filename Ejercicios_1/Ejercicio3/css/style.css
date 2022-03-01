@@ -44,13 +44,13 @@ header > img{
 header > h3 {
     font-weight: bold;
     left: 9.5%;
-    top: -110px;
+    top: -3.5em;
     font-size: 2em;
 }
 
 header > h5 {
     left: 9.5%;
-    top: -110px;
+    top: -6.5em;
     font-size: 1em;
 }
 
