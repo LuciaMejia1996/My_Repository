@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Cabezera de la pagina web **/
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 100vw;
+    padding: 2em 2em 2em 2em;
+}
+
+/**Quitando decoracion de las lineas*/
+header > a:link,
+header > nav > ul > li > a:link{
+    text-decoration: none;
+    color: white;
+}
+
+header > a:visited,
+header > nav > ul > li > a:visited{
+    color: white;
+}
+
+header > a > h3 {
+    font-size: 4;
+    padding: 3.5em;
+    flex-basis: 30vw;
+    text-decoration: none;
+}
+
+
+header > nav{
+    padding: 3.5em;
+    flex-basis: 90vw;
+    margin-top: 0.7em;
+}
+
+header > nav > ul {
+    font-size: 4;
+    margin-left: 60%;
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding: 1em;
+    list-style-type: none;
+
+}
+
+main > section{
+    padding: 4em;
+    padding-bottom: 20em;
+} 
+
+
+main > section > h2{
+    margin: 1em;
+    font-size: 3em;
+} 
+
+main > section > p {
+    margin: 2em;
+    font-size: 1em;
+}
+
+#cabeza{
+    margin: 1em;
+    background-image: url("../img/image.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 0em;
+    background-size:cover;
+    color: white;  
+    
+}
+
+/** Final del header**/
+
+/**inicio del body**/
+
+#cuerpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3.5vw;
+    margin-left: 8.5vw;
+    font-weight: bold;
+}
+
+.parte1{
+    order: 1;
+    margin-left: -1.5vw;
+}
+
+.parte2{
+    order: 2;
+    margin-left: 40vw;
+    margin-top: -20vw;
+}
+
+.parte3{
+    order: 3;
+    margin-top: 1.3vw;
+    margin-left: -1.5vw;
+}
+
+.parte4{
+    order: 4;
+    margin-left: 40vw;
+    margin-top: -20.1vw;
+}
+
+.part-head,
+.part-body{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    width: 40vw;
+}
+
+.part-list{
+    list-style-type: none;
+    background-color: aliceblue;
+    width: 40vw;
+    border: 1px solid rgb(236, 233, 230);
+}
+
+.part-list > li{
+    padding: 1em;
+    border: 1px solid rgb(236, 233, 230);
+}
