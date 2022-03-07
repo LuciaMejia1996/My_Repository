@@ -1,0 +1,88 @@
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+
+}
+
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    counter-reset: section;
+    
+}
+
+li {
+    width: 200px;
+    height: 200px;
+}
+
+
+.lista > li{
+    margin: 1em;
+    border: 2px solid black;
+    list-style-type: none;
+}
+
+.lista > li:nth-child(1)::after{
+    content: "\01F525";
+}
+
+.lista > li:nth-child(2)::after{
+    content: "\01F601";
+}
+
+.lista > li:nth-child(3)::after{
+    content: "\01F602";
+}
+
+.lista > li:nth-child(4)::after{
+    content: "\01F603";
+}
+
+.lista > li:nth-child(5)::after{
+    content: "\01F604";
+}
+
+.lista > li:nth-child(6)::after{
+    content: "\01F605";
+}
+
+
+.lista > li:last-child {
+    color: white;
+    background-color: rgb(60, 60, 190);
+}
+
+.lista > li:nth-child(odd){
+    color: green;
+    text-decoration: underline;
+}
+
+.lista > li[lang="en"]{
+    font-size: 2em;
+    font-style: bold;
+}
+
+#provincias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#provincias > li {
+    margin: 2em;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#provincias > li:nth-child(n+1):nth-child(-n+3) {
+    list-style-type: lower-roman;
+}
+
+#provincias > li:last-child{
+    list-style-type: none;
+}

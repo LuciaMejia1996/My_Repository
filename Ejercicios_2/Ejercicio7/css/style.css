@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/**Background  y barra de navegacion**/
+.navegacion{
+    background-color: yellow;
+    height: 110vmin;
+    background-image: url("../img/vaca_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+
+.navegacion > header {
+    padding: 8vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190vmin;
+    
+}
+
+.navegacion > header > nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 3vmin;
+}
+
+.navegacion > header > nav > ul {
+    margin-right: 50vmin;
+}
+
+
+header > nav > ul > li > a:link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header > h2{
+    margin-right: 50vmin;
+    font-size: 5.5vmin;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+header > button[type="button"]{
+    width: 15vmin;
+    height: 5vmin;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/**Fin de background y barra de navegacion**/
+
+/**Texto del medio**/
+.subcabezera{
+    background-color: orange;
+    padding: 11.5vmin;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 199.5vmin;
+    height: 70vmin;
+}
+
+.subcabezera > h2{
+    font-size: 5.5vmin;
+    color: white;
+    font-weight: bold;
+    margin-top: -8vmin;
+    margin-bottom: 2vmin;    
+}
+
+.subcabezera > .subparrafo {
+    margin: 1vmin;
+    height: 20vmin;
+    width: 78vmin;
+}
+
+/**Segundaa parte del coso vacas**/
+
+.ventavacas {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+
+.ventavacas > ul {
+    margin-left: 12vmin;
+    margin-top: -8vmin;
+    margin-bottom: 5vmin;
+}
+
+.ventavacas > ul > li {
+    list-style-type: none;
+    margin-right: -5vmin;
+}
+
+.ventavacas > ul > li > img{
+    width: 42vmin;
+    margin-bottom: -1.5vmin;
+}
+
+.ventavacas > ul > li > h3{
+    background-color: black;
+    color: white;
+    padding: 2vmin;
+    width: 42vmin;
+    font-size: 5vmin;
+    text-align: center;
+}
+.ventavacas > ul > li > p{
+    background-color: black;
+    color: white;
+    width: 42vmin;
+    font-size: 1.8vmin;
+    padding: 3vmin;
+    font-weight: bold;
+}
+
+.ventavacas > ul > li > .botonComprar{
+    width: 42vmin;
+    height: 6vmin;
+    background-color: rgb(189, 192, 189);
+    border-style: none;
+    font-weight: bold;
+}
+
+
+/**Fin de la segunda parte de coso vacas*/
+
+/**Tecera parte contacto**/
+
+.formulario{
+    padding: 8vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formulario > h2 {
+    font-size: 6vmin;
+    font-weight: bold;
+    color: orange;
+    margin-left: 3vmin;
+    width: 149vmin;
+}
+
+.formulario > form {
+    width: 150vmin;
+    margin: 3vmin;
+    flex-flow: row;
+}
+
+.formulario > form > label{
+    display: block;
+  
+}
+
+.formulario > form > select{
+    width: 50vmin;
+    height: 4vmin;
+    
+}
+
+.formulario > form > input{
+    width: 50vmin;
+    height: 4vmin;
+    
+}
+
+.formulario > form > textarea{
+    width: 60vmin;
+    height: 14vmin;
+}
+
+.formulario > form > input#news{
+    background-color: yellow;
+}
