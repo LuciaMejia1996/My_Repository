@@ -1,0 +1,16 @@
+{
+  "name": "clase-javascript",
+  "version": "1.0.0",
+  "description": "su uso es para las clases practicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lucia Mejia",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "prettier": "^2.5.1"
+  }
+}

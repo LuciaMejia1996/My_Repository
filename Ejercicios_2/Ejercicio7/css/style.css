@@ -164,20 +164,41 @@ header > button[type="button"]{
 }
 
 .formulario > form > label{
-    display: block;
-  
+  display: block; 
 }
 
 .formulario > form > select{
     width: 50vmin;
     height: 4vmin;
     
+    
+}
+
+
+.formulario > form > input#name {
+    margin-top: -4vmin;
+
+}
+
+.formulario > form > label[for="name"] {
+    margin-bottom: 2vmin ;
+}
+
+.formulario > form > input#dir  {
+    margin-left: 60vmin;
+    margin-top: 0vmin !important; 
+
+}
+
+.formulario > form > label[for="dir"] {
+    margin-left: 60vmin;
+    margin-bottom: 1vmin !important;
 }
 
 .formulario > form > input{
     width: 50vmin;
     height: 4vmin;
-    
+
 }
 
 .formulario > form > textarea{
