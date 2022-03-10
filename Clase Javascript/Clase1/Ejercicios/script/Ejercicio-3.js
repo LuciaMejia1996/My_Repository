@@ -21,14 +21,12 @@ num_b = prompt('Introduzca numero 2');
 
 if (num_a > num_b) {
     if (parseInt(num_b) === 0) {
-        console.log('no se puede dividir entre cero');
-    } else {
-        console.log(num_a % num_b);
+        throw new Error('No se puede dividir entre cero');
     }
+    console.log(num_a % num_b);
 } else {
     if (parseInt(num_a) === 0) {
-        console.log('no se puede dividir entre cero');
-    } else {
-        console.log(num_b % num_a);
+        throw new Error('No se puede dividir entre cero');
     }
+    console.log(num_b % num_a);
 }
