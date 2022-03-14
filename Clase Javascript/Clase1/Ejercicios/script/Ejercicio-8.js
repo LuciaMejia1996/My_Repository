@@ -64,5 +64,5 @@ switch (operacion) {
 
     default:
         alert('debe escoger una opcion adecuada');
-        throw new Error('No se puede dividir por 0');
+        throw new Error('Debe escoger una opcion correcta');
 }
