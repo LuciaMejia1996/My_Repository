@@ -24,7 +24,13 @@ let coso = [];
 
 //recorriendo la palabra para retirarle la ','
 for (let i = 0; i < text.length; i++) {
-    coso_2 += text[i].split(',').join('').toLocaleLowerCase();
+    coso_2 += text[i]
+        .split(',')
+        .join('')
+        .toLocaleLowerCase()
+        .replace('¡', '')
+        .replace('!', '')
+        .replace(',', '');
 }
 
 //recorriendo el texto para eliminarle los espacios y ordernarlo en reversa mami :V
