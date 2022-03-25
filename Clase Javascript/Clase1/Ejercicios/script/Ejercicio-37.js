@@ -33,26 +33,18 @@ const fruitBasket = [
 
 // Objeto de frutas
 let frutas = {};
-//LLenando el objeto de frutas
-//fruitBasket.forEach((fru) => {
-//    frutas[`${fru}`] = 0;
-//});
 
-for (let i = 0; i < fruitBasket.length; i++) {
-    if (frutas[fruitBasket[i]]) {
-        frutas[fruitBasket[i]] = 0;
+//*Rellenando objeto frutas con las correspondientes
+/*repeticiones dentro del arrat */
+let contador = 1;
+
+fruitBasket.forEach((fruta) => {
+    if (fruta in frutas) {
+        frutas[`${fruta}`] = contador;
+        contador++;
     } else {
-        frutas[fruitBasket[i]] = fruitBasket[i] + i;
+        frutas[`${fruta}`] = 1;
     }
-}
+});
 
 console.log(frutas);
-
-/**
- * for (let x = 1; x < fruitBasket.length; x++) {
-        if (fruitBasket[i] !== fruitBasket[x]) {
-            console.log(fruitBasket[i] + ' ' + fruitBasket[x]);
-            //frutas[fruitBasket[i]] = x;
-        }
-    }
- */
