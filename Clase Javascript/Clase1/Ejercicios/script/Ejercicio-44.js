@@ -168,8 +168,8 @@ const countries = [
  *
  */
 
-const Persona_infectada = countries.reduce((i, country) => {
-    return (i += country.infected);
+const Persona_infectada = countries.reduce((con, country) => {
+    return (con += country.infected);
 }, 0);
 
 console.log('Personas infectadas: ' + Persona_infectada);
@@ -197,13 +197,15 @@ console.log('Paises infectados: ' + Paises_infectados);
 
 const Nombre_pais_mas_infectado = countries.map((con) => con.infected);
 const Mas_Infectado = countries.map((country) => country.name);
+let mas_infected = {};
 
 for (let i = 0; i < countries.length; i++) {
     if (Mas_Infectado[i] > Mas_Infectado[i + 1]) {
-        console.log(Mas_Infectado[i] + ' - ' + Nombre_pais_mas_infectado[i]);
+        mas_infected['Nombre_pais'] = Mas_Infectado[i];
+        mas_infected['Numero_Infectados'] = Nombre_pais_mas_infectado[i];
     }
 }
-
+console.log(mas_infected);
 /**
  *  ###########################
  *  ## E J E R C I C I O   4 ##
@@ -229,13 +231,19 @@ const Perro_name = persons
     .filter((ps) => ps.code === 'ES')
     .map((ls) => ls.petName);
 
+//console.log(Perro_name);
+let es_perro = {};
 for (let i = 0; i < pets.length; i++) {
     if (pets[i].type === 'perro' && pets[i].petName === Perro_name[i]) {
-        console.log(
-            `Nombre: '${persons[i].name}',\ncountry: '${persons[i].code}',\nNombre Mascota: '${Perro_name[i]}'`
-        );
+        es_perro['Nombre_persona'] = persons[i].name;
+        es_perro['Codigo_pais'] = persons[i].code;
+        es_perro['Nombre_mascota'] = Perro_name[i];
+        //console.log(
+        //    `Nombre: '${persons[i].name}',\ncountry: '${persons[i].code}',\nNombre Mascota: '${Perro_name[i]}'`
+        //);
     }
 }
+console.log(es_perro);
 
 /**
  *  ###########################
@@ -256,6 +264,61 @@ for (let i = 0; i < pets.length; i++) {
  *  }
  *
  */
+
+const Personas_mayores = persons.filter((ls) => ls.age > 18);
+const Pet_name = pets.map((rs) => rs);
+
+let Personas_mascotas = {
+    Nombre_persona: '',
+    Edad_persona: 0,
+    Infected: '',
+    Mascota: {
+        Nombre_mascota: '',
+        Tipo_Mascota: '',
+    },
+};
+
+// Constructor con sus variables.
+class Personas_mascota {
+    constructor(Nombre_mascota, Edad_persona, Infected, Mascota) {
+        this.Nombre_mascota;
+        this.Edad_persona;
+        this.Infected;
+        this.Mascota;
+    }
+
+    get Nombre_mascota() {
+        return this.Nombre_mascota;
+    }
+    set Nombre_mascota(Nombre_mascota) {}
+
+    get Edad_persona() {
+        return this.Edad_persona;
+    }
+    set Edad_persona(Edad_persona) {}
+
+    get Infected() {
+        return this.Infected;
+    }
+    set Infected(Infected) {}
+
+    get Mascota() {
+        return this.Mascota;
+    }
+    set Mascota(Mascota) {}
+}
+// final constructor
+
+let PM = new Personas_mascotas();
+
+for (let i = 0; i < Personas_mayores.length; i++) {
+    PM.Nombre_persona = Personas_mayores[i].name;
+    PM.Edad_persona = Personas_mayores[i].age;
+    PM.Infected = Personas_mayores[i].infected;
+    PM.Mascota.Nombre_mascota = Pet_name[i].petName;
+    PM.Mascota.Tipo_Mascota = Pet_name[i].type;
+}
+console.log(Personas_mascotas);
 
 /**
  *  ###########################
