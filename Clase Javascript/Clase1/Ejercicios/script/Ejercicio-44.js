@@ -268,57 +268,18 @@ console.log(es_perro);
 const Personas_mayores = persons.filter((ls) => ls.age > 18);
 const Pet_name = pets.map((rs) => rs);
 
-let Personas_mascotas = {
-    Nombre_persona: '',
-    Edad_persona: 0,
-    Infected: '',
-    Mascota: {
-        Nombre_mascota: '',
-        Tipo_Mascota: '',
-    },
-};
-
-// Constructor con sus variables.
-class Personas_mascota {
-    constructor(Nombre_mascota, Edad_persona, Infected, Mascota) {
-        this.Nombre_mascota;
-        this.Edad_persona;
-        this.Infected;
-        this.Mascota;
-    }
-
-    get Nombre_mascota() {
-        return this.Nombre_mascota;
-    }
-    set Nombre_mascota(Nombre_mascota) {}
-
-    get Edad_persona() {
-        return this.Edad_persona;
-    }
-    set Edad_persona(Edad_persona) {}
-
-    get Infected() {
-        return this.Infected;
-    }
-    set Infected(Infected) {}
-
-    get Mascota() {
-        return this.Mascota;
-    }
-    set Mascota(Mascota) {}
-}
-// final constructor
-
-let PM = new Personas_mascotas();
-
 for (let i = 0; i < Personas_mayores.length; i++) {
-    PM.Nombre_persona = Personas_mayores[i].name;
-    PM.Edad_persona = Personas_mayores[i].age;
-    PM.Infected = Personas_mayores[i].infected;
-    PM.Mascota.Nombre_mascota = Pet_name[i].petName;
-    PM.Mascota.Tipo_Mascota = Pet_name[i].type;
+    const Persona_Mascota = {
+        ['Nombre']: Personas_mayores[i].name,
+        ['Edad']: Personas_mayores[i].age,
+        ['Infected']: Personas_mayores[i].infected,
+        ['Mascota']: {
+            ['Nombre_Mascota']: Pet_name[i].petName,
+            ['Tipo_Mascota']: Pet_name[i].type,
+        },
+    };
+    console.log(Persona_Mascota);
 }
-console.log(Personas_mascotas);
 
 /**
  *  ###########################
@@ -329,6 +290,11 @@ console.log(Personas_mascotas);
  *
  */
 
+const Total_Patas = animals.reduce((con, ani) => {
+    return (con += ani.legs);
+}, 0);
+
+console.log('Total de patas de los animales: ' + Total_Patas);
 /**
  *  ###########################
  *  ## E J E R C I C I O   8 ##
@@ -337,6 +303,16 @@ console.log(Personas_mascotas);
  *  Array con las personas que tienen animales de 4 patas
  *
  */
+
+const personas_animales = persons.map((ps) => ps.petName);
+const personas_animales_patas = pets.map((pt) => pt);
+const animales_patas = animals.filter((rs) => rs.legs === 4);
+
+console.log(personas_animales_patas);
+
+for (const anim of personas_animales_patas) {
+    console.log(anim);
+}
 
 // Obtenemos a las mascotas de 4 patas.
 
