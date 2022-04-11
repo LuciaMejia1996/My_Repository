@@ -7,7 +7,7 @@ const User_list = [
         Datos_usuario: {
             Nombre: 'Lucia Alejandra Mejia Alonzo',
             edad: 26,
-            gender: 'Female',
+            gender: 'Femenino',
         },
     },
 
@@ -17,13 +17,12 @@ const User_list = [
         Datos_usuario: {
             Nombre: 'Roberto Alejandro Mejia Alonzo',
             edad: 26,
-            gender: 'Male',
+            gender: 'Masculino',
         },
     },
 ];
 
-console.log(User_list);
-
+/*He usado un selector especifico como en CSS */
 document.querySelector('[type="button"]').setAttribute('onclick', `rec()`);
 
 //Envio sin enviar :V
@@ -33,7 +32,13 @@ function rec() {
 
     for (const users of User_list) {
         if (users.user === user && users.pass === pass) {
-            console.log(`${user} && ${pass}`);
+            document.querySelector('#datos-user').removeAttribute('style');
+            const datos = users.Datos_usuario;
+            let user_data = document.querySelector('#datos-user');
+
+            user_data.querySelector('#Nombre').innerHTML = datos.Nombre;
+            user_data.querySelector('#Edad').innerHTML = datos.edad;
+            user_data.querySelector('#Genero').innerHTML = datos.gender;
         }
     }
 }

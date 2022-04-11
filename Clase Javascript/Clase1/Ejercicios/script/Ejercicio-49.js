@@ -1,3 +1,16 @@
+/**
+ * #################
+ * ## Ejercicio 1 ##
+ * #################
+ *
+ *  Haz un recorrido del siguiente objeto para que salga en pantalla
+ *
+ *  - 'La Manzana es roja'
+ *  - 'El Platano es Amarillo'
+ *  - 'La Pera es verde'
+ *  - 'El Arandano es Azul'
+ */
+
 'use strict';
 
 const arrEjercicio = [
