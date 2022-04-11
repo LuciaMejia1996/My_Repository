@@ -34,7 +34,7 @@ const getCaracters = async (status = '', species = '') => {
 
         const { info: inf } = data;
 
-        for (let i = 1; i <= inf.pages; i++) {
+        for (let i = 2; i <= inf.pages; i++) {
             const responsive = await fetch(
                 `https://rickandmortyapi.com/api/character?page=${i}&status=${status}&species=${species}`
             );
@@ -49,4 +49,4 @@ const getCaracters = async (status = '', species = '') => {
     }
 };
 
-getCaracters('Dead', 'Human');
+getCaracters('', 'Human');
