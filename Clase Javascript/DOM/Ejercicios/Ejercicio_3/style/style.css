@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 4vmin;
+}
+
+body > table {
+    border: 2px solid black;
+    padding: 2vmin;
+    background-color: #FFF286;
+}
+
+table > tbody > tr > th {
+    padding: 2vmin;
+}
+
+table > tbody > tr > td {
+   text-align: center;
+   padding: 2vmin;
+   background-color: #FFF9C6;
+}
+
+table > tbody > tr:nth-of-type(n+2) > td {
+    border: 2px solid black;
+}
+
+
+
