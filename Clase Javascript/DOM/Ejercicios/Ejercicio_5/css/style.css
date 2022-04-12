@@ -1,0 +1,68 @@
+:root{
+    --color-red: #EF2626;
+    --color-pink: #FB17DE;
+    --color-blue: #154580;
+    --color-green: #80FF3F;
+    --color-yellow:  #FFE918;
+    --color-cyan: #18FFF2;
+    --color-violet: #8818FF;
+    --color-orange: #FF9015;
+    --color-aquamarine: #0AFDD1;
+    --color-lightGreen: #0AFD89;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.piso > div.casilla_1{
+    background-color: var(--color-red);
+}
+.piso > div.casilla_2{
+    background-color: var(--color-pink);
+}
+.piso > div.casilla_3{
+    background-color: var(--color-blue);
+}
+.piso > div.casilla_4{
+    background-color: var(--color-green);
+}
+.piso > div.casilla_5{
+    background-color: var(--color-yellow);
+}
+.piso > div.casilla_6{
+    background-color: var(--color-cyan);
+}
+.piso > div.casilla_7{
+    background-color: var(--color-violet);
+}
+.piso > div.casilla_8{
+    background-color: var(--color-orange);
+}
+.piso > div.casilla_9{
+    background-color: var(--color-violet);
+}
+.piso > div.casilla_10{
+    background-color: var(--color-orange);
+}
+
+.piso{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 40vmin;
+    background-color: black;
+}
+
+.piso > div {
+    width: 8vmin;
+    height: 8vmin;
+    border: 1px solid black;
+    margin: 1vmin;
+
+}
+
