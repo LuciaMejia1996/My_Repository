@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(56, 56, 56);
+}
+
 .piso > div.casilla_1{
     background-color: var(--color-red);
 }
@@ -54,8 +58,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 40vmin;
+    width: 160vmin;
     background-color: black;
+    margin-left: 12vmin;
+    position: relative;
+    top: 20vmin;
 }
 
 .piso > div {
