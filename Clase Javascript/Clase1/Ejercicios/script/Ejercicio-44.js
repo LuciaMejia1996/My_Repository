@@ -269,15 +269,17 @@ const Personas_mayores = persons.filter((ls) => ls.age > 18);
 const Pet_name = pets.map((rs) => rs);
 
 for (let i = 0; i < Personas_mayores.length; i++) {
-    const Persona_Mascota = {
-        ['Nombre']: Personas_mayores[i].name,
-        ['Edad']: Personas_mayores[i].age,
-        ['Infected']: Personas_mayores[i].infected,
-        ['Mascota']: {
-            ['Nombre_Mascota']: Pet_name[i].petName,
-            ['Tipo_Mascota']: Pet_name[i].type,
+    let Persona_Mascota = [
+        {
+            ['Nombre']: Personas_mayores[i].name,
+            ['Edad']: Personas_mayores[i].age,
+            ['Infected']: Personas_mayores[i].infected,
+            ['Mascota']: {
+                ['Nombre_Mascota']: Pet_name[i].petName,
+                ['Tipo_Mascota']: Pet_name[i].type,
+            },
         },
-    };
+    ];
     console.log(Persona_Mascota);
 }
 
@@ -344,4 +346,4 @@ for (const anim of personas_animales_patas) {
 
 // En base al array anterior filtro a las personas con mascotas de 8 patas.
 
-// Calculo el número de infectados totales de los países con mascotas de  patas.
+// Calculo el número de infectados totales de los países con mascotas de  patas

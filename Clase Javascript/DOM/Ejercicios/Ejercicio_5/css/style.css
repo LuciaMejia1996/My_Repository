@@ -60,9 +60,9 @@ body{
     justify-content: flex-start;
     width: 160vmin;
     background-color: black;
-    margin-left: 12vmin;
+    margin-left: 15vmin;
     position: relative;
-    top: 20vmin;
+    top: 18vmin;
 }
 
 .piso > div {
