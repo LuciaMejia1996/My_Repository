@@ -35,5 +35,6 @@ cabezera.querySelector('h1').textContent = user.name;
 cabezera.querySelector('h3').textContent = user.email;
 
 //Con innerHTML en la cabezera
-cabezera.innerHTML = `<h1>${user.name}</h1>
-<h3>${user.email}</h3>`;
+cabezera.innerHTML = `
+    <h1>${user.name}</h1>
+    <h3>${user.email}</h3>`;
