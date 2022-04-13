@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+body > section{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 35vmin;
+    height: 38vmin;
+    background: rgb(22, 22, 22);
+}
+
+#temperaturas {
+    margin: 2vmin;
+}
+
+#temperaturas > tbody > tr {
+    text-align: center;
+    margin-left: 16vmin;
+}
+
+#temperaturas > thead{
+    text-decoration: underline;
+}
+
+#temperaturas > tbody {
+    height: 30.5vmin;
+    font-weight: bold;
+}
+
+
+.lower{
+    background-color: rgb(65, 65, 253);
+}
+
+
+.low{
+    background-color: rgb(78, 175, 94);
+}
+
+
+.medium{
+    background-color: rgb(206, 206, 29);
+}
+
+.high{
+    background-color: rgb(197, 93, 93);
+}

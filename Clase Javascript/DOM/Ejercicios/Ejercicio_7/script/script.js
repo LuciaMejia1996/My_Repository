@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Completa la tabla de temperaturas tomando como referencia
@@ -42,3 +42,38 @@ const cities = [
         max: 29,
     },
 ];
+
+//seleccionando elementos
+//seleccionando al padrre
+const table = document.querySelector('table#temperaturas');
+
+//seleccionando al tbody del padre
+const tbody = table.querySelector('tbody');
+
+//creando clase medicion temperatua
+
+function temperatura(tmp) {
+    if (tmp < 4) {
+        return 'lower';
+    }
+    if (tmp < 20) {
+        return 'low';
+    }
+    if (tmp < 30) {
+        return 'medium';
+    } else {
+        return 'high';
+    }
+}
+
+//insertando coso al tbody
+let Cuerpo_table = '';
+
+for (const key of cities) {
+    Cuerpo_table += `<tr><td>${key.name}</td><td class='${temperatura(
+        Number(key.min)
+    )}'>${key.min}</td>
+    <td class='${temperatura(key.max)}'>${key.max}</td></tr>`;
+}
+
+tbody.innerHTML = Cuerpo_table;
