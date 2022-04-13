@@ -19,6 +19,12 @@
 }
 
 body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(56, 56, 56);
 }
 
@@ -57,12 +63,9 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     width: 40vmin;
+    height: 40vmin;
     background-color: black;
-    margin-left: 73vmin;
-    position: relative;
-    top: 28vmin;
 }
 
 .piso > div {
