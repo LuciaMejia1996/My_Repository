@@ -19,7 +19,7 @@ body > section{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 35vmin;
+    width: 40vmin;
     height: 38vmin;
     background: rgb(22, 22, 22);
 }
