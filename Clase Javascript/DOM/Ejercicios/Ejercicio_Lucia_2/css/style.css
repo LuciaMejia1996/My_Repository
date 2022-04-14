@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('../fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid; 
+    grid-template-columns: 42vmin 1fr;
+    grid-template-rows: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body > div.info{
+    grid-area: 1;
+    background-color: rgb(60, 60, 73);
+    color: white;
+    padding: 4vmin;
+}
+
+body > div.inf_2{
+    grid-area: 0;
+    background-color: rgb(245, 245, 220);
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    align-items: left;
+
+}
+
+.info > *{
+    margin-bottom: 3vmin;
+}
+
+.info > img{
+    margin-top: 1.0vmin;
+    width:30vmin;
+    height:30vmin;
+    border-radius: 55vmin;
+}
+
+.info > h2 {
+    font-size: 3.5vmin;
+    align-items: flex-end;
+    margin-bottom: 1vmin;
+}
+
+.info > .separator{
+    width: 35vmin;
+    border: 1px solid bisque;
+    background-color: bisque;
+
+}
+
+
+.info > p {
+    font-size: 1.8vmin;
+    line-height: 2.5vmin;
+    margin-bottom: 2vmin;
+}
+
+.info > ul > li {
+    padding-bottom: 1vmin;
+    margin-left: 2vmin;
+    font-size: 1.9vmin;
+}
+
+.info > h3:first-of-type{
+    font-size: 2.5vmin;
+    font-weight: bold;
+    color: bisque;
+}
+
+.personal{
+    margin-top: 2vmin;
+    font-size: 2.3vmin;
+    color: bisque;
+}
+
+.info > ul#contact > li > a{ 
+    text-decoration: none;
+    color: white;
+}

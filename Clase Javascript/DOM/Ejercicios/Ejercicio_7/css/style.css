@@ -4,8 +4,10 @@
     box-sizing: border-box;
 
 }
-
-body{
+/*Grid permite trabajar en eje vertical y horizontal mas no aprunfundidad
+Flex permite trabajar un poco mas a profundidad pero en una direccion (vertical u horizontal en concreto)*/
+body
+{
     height: 100vh;
     width: 100vw;
     display: grid;
