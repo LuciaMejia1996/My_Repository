@@ -7,6 +7,7 @@
 
 body{
     height: 100vh;
+    width: 100vw;
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,11 +17,12 @@ body{
 }
 
 body > section{
+    width: 30vmax;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 1px solid black;
-    width: 40vmin;
-    height: 38vmin;
+ 
     background: rgb(22, 22, 22);
 }
 
