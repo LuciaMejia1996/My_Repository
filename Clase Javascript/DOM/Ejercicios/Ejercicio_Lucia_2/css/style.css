@@ -22,7 +22,7 @@ body{
 
 }
 
-
+/*Parte informacion sobre mi persona*/
 body > div.info{
     grid-area: 1;
     background-color: rgb(60, 60, 73);
@@ -65,7 +65,6 @@ body > div.inf_2{
     width: 35vmin;
     border: 1px solid bisque;
     background-color: bisque;
-
 }
 
 
@@ -96,4 +95,103 @@ body > div.inf_2{
 .info > ul#contact > li > a{ 
     text-decoration: none;
     color: white;
+}
+
+/*Mis experiencias mi formacion y demas*/
+
+.inf_2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;   
+    align-items: left;
+    padding-left: 5vmin;
+    padding-right: 4vmin;
+    
+}
+
+.inf_2 > div#formation > .separator{
+    margin-top: 4vmin;
+    border: 1.5vmin solid bisque;
+    background-color:bisque;
+    text-align: left;
+    font-size: 3.5vmin;
+    color: rgb(60, 60, 73);
+    font-weight: bold;
+
+}
+
+.inf_2 > div#formation > h3{
+    text-transform: uppercase;
+    padding-top: 4vmin;
+    font-size: 2.3vmin;
+    font-weight: bold;
+}
+
+.inf_2 > div#formation > h5{
+    padding-top: 1vmin;
+    font-size: 1.8vmin;
+    padding-bottom: 2vmin;
+}
+
+.inf_2 > div#formation > h5.normal{
+    padding-top: 1vmin;
+    font-weight: normal;
+    padding-bottom: 2vmin;
+}
+
+.inf_2 > div#formation > ul > li {
+    padding-top: 1vmin;
+    font-size: 2vmin;
+    list-style-type: none;
+ 
+}
+
+.inf_2 > div#experiencia > .separator,
+.inf_2 > div#Tecno > .separator{
+    margin-top: 4vmin;
+    border: 1.5vmin solid bisque;
+    background-color:bisque;
+    text-align: left;
+    font-size: 3.5vmin;
+    color: rgb(60, 60, 73);
+    font-weight: bold;
+
+}
+
+.inf_2 > div#experiencia > h3{
+    text-transform: uppercase;
+    padding-top: 4vmin;
+    font-size: 2.3vmin;
+    font-weight: bold;
+}
+
+.inf_2 > div#experiencia > h5{
+    padding-top: 1vmin;
+    font-size: 1.8vmin;
+    padding-bottom: 2vmin;
+}
+
+.inf_2 > div#experiencia > h5.normal{
+    padding-top: 1vmin;
+    font-weight: normal;
+    padding-bottom: 2vmin;
+}
+
+.inf_2 > div#experiencia > ul > li {
+    padding-top: 1vmin;
+    font-size: 2vmin;
+    list-style-type: none;
+ 
+}
+
+.inf_2 > div#Tecno > ul > li{
+    padding-top: 1vmin;
+    padding-left: 2vmin;
+    font-size: 2vmin;
+    list-style-type: none;
+    text-align: left;
+}
+
+.inf_2 > div#Tecno {
+    padding-bottom: 4vmin;
 }
