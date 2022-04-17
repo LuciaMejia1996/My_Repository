@@ -26,6 +26,7 @@
 //Ver la informacion del coso del fantamista
 const cuerpo = document.querySelector('body');
 const boo = cuerpo.querySelector('.boo');
+const New_Boo = document.createElement('div');
 
 //const Nueva_ubicacion = new DOMRect(100, 100);
 
@@ -43,6 +44,9 @@ setInterval(() => {
     const color2 = Math.floor(Math.random() * 256);
     const color3 = Math.floor(Math.random() * 256);
 
+    New_Boo.setAttribute('class', 'boo');
+    New_Boo.innerHTML = '👻';
+
     boo.setAttribute(
         'style',
         `position: fixed;
@@ -52,6 +56,7 @@ setInterval(() => {
         bottom: calc(${Random_Altura_buttom}px - 2vmin);
         `
     );
+
     cuerpo.setAttribute(
         'style',
         `background-color: rgb(${color1}, ${color2}, ${color3});`
