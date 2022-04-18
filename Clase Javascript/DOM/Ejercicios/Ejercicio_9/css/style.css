@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 1fr 1fr;
+}
+
+body > div:nth-child(1) {
+    grid-area: 1;
+}
+
+body > div:nth-child(1) > h1.name {
+    font-size: 6vmin;
+    font-weight: bold;
+}
+
+body > div:nth-child(2) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+body > div:nth-child(3) {
+    grid-area: 4;
+    width: 100vw;
+    height: 15vh;
+}
+
+body > div:nth-child(1) > button{
+    margin: 2vmin;
+    width: 120px;
+    height: 40px;
+}
+
+body > div:nth-child(1).light {
+    background-color: rgb(212, 185, 241);
+}
+
+body > div:nth-child(1).light > button{
+    background-color: rgb(113, 113, 238);
+    color: white;
+}
+
+body > div:nth-child(1).light > button:disabled{
+    background-color: rgb(134, 134, 179);
+    color: rgba(255, 255, 255, 0.801);
+}
+
+body > div:nth-child(1).light > h1.name{
+    color: black;   
+}
+
+body > div:nth-child(2).light {
+    background-color: rgb(255, 255, 255);
+}
+body > div:nth-child(3).light {
+    background-color: rgb(218, 228, 228);
+}
+
+
+
+body > div:nth-child(1).night {
+    background-color: rgb(102, 19, 88);
+}
+body > div:nth-child(1).night > h1.name{
+    color: white;   
+}
+
+body > div:nth-child(1).night > button{
+    background-color: rgb(3, 3, 3);
+    color: white;
+}
+
+body > div:nth-child(1).night > button:disabled{
+    background-color: rgb(62, 62, 65);
+    color: rgba(255, 255, 255, 0.616);
+}
+
+body > div:nth-child(2).night {
+    background-color: rgb(190, 189, 189);
+}
+body > div:nth-child(3).night {
+    background-color: rgb(44, 43, 48);
+}
