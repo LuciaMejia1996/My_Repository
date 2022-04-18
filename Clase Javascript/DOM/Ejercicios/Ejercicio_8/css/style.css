@@ -16,5 +16,7 @@ body > .boo{
     grid-area: 1;
     width: 1vmin;
     height: 1vmin;
+    font-size: 6vmin;
+
 
 }

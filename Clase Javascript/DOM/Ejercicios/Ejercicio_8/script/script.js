@@ -27,18 +27,18 @@
 const cuerpo = document.querySelector('body');
 const boo = cuerpo.querySelector('.boo');
 const New_Boo = document.createElement('div');
-
 //const Nueva_ubicacion = new DOMRect(100, 100);
 
 setInterval(() => {
     const Altura = window.innerHeight;
     const Anchura = window.innerWidth;
+    const boo_size = boo.getBoundingClientRect();
 
     //Obteninedo una altura aleatoria segun el maximo de pantalla en pixeles
-    const Random_Altura_top = Math.floor(Math.random() * Altura - 1.0);
-    const Random_Altura_buttom = Math.floor(Math.random() * Altura - 1.2);
-    const Random_Anchura_left = Math.floor(Math.random() * Anchura - 1.0);
-    const Random_Anchura_right = Math.floor(Math.random() * Anchura - 1.2);
+    const Random_Altura_top = Math.round(Math.random() * Altura);
+    const Random_Altura_buttom = Math.round(Math.random() * Altura);
+    const Random_Anchura_left = Math.round(Math.random() * Anchura);
+    const Random_Anchura_right = Math.round(Math.random() * Anchura);
 
     const color1 = Math.floor(Math.random() * 256);
     const color2 = Math.floor(Math.random() * 256);
@@ -49,11 +49,11 @@ setInterval(() => {
 
     boo.setAttribute(
         'style',
-        `position: fixed;
-        right: calc(${Random_Anchura_right}px - 2vmin); 
-        left: calc(${Random_Anchura_left}px - 2vmin); 
-        top: calc(${Random_Altura_top}px - 2vmin);
-        bottom: calc(${Random_Altura_buttom}px - 2vmin);
+        `position: absolute;
+        right: calc(${Random_Anchura_right}px - ${boo_size.width}vmin); 
+        left: calc(${Random_Anchura_left}px - ${boo_size.width}vmin); 
+        top: calc(${Random_Altura_top}px - ${boo_size.height}vmin);
+        bottom: calc(${Random_Altura_buttom}px - ${boo_size.height}vmin);
         `
     );
 
