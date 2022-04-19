@@ -31,8 +31,10 @@ body > div > h3{
 body > section > nav.navegation {
     position: relative;
     z-index: 2;
-    bottom: 8vmin;
+    bottom: 3vmin;
     animation: nav 100ms;
+    float: right;
+    width: 80vw;
 }
 
 
