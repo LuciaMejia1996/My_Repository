@@ -3,8 +3,6 @@
 const hamburger = document.querySelector('.menu > button');
 const menu = document.querySelector('nav.navegation');
 
-console.log(menu);
-
 menu.setAttribute('style', 'display: none;');
 
 function Onclick() {

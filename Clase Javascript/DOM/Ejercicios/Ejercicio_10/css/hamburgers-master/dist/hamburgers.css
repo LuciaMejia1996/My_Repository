@@ -26,7 +26,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #000; }
+    background-color: rgb(255, 253, 253); }
 
 .hamburger-box {
   width: 40px;
@@ -41,7 +41,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -246,7 +246,7 @@
     transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1); }
 
 /*
-   * Boring
+   * Boring AQUI ESTA EL MIO
    */
 .hamburger--boring .hamburger-inner, .hamburger--boring .hamburger-inner::before, .hamburger--boring .hamburger-inner::after {
   transition-property: none; }
