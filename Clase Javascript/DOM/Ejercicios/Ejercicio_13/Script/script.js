@@ -9,8 +9,6 @@ BONUS: algún elemento diferenciará visualmente el estado*/
 
 const main = document.querySelector('main');
 const table = document.createElement('table');
-const thead = document.createElement('thead');
-const th = document.createElement('th');
 
 const getCaracters = async () => {
     try {
@@ -24,19 +22,46 @@ const getCaracters = async () => {
 
         main.appendChild(table);
 
-        let cos =
-            '<thead><th>Nombre</th><th>Especie</th><th>Estado</th></thead>';
+        let cos = `<thead>
+                <th>img</th>
+                <th>Nombre</th>
+                <th>Especie</th>
+                <th>Estado</th>
+            </thead>`;
         for (const key of res) {
-            const { nombre, estado, especie } = getchar(key);
+            const { imagen, nombre, estado, especie } = getchar(key);
 
             cos += `
             <tr>
+                <td><img src="${imagen}" alt="${nombre}"></td>
                 <td>${nombre}</td>
                 <td >${especie}</td>
                 <td class='${estado}'>${estado}</td>
             </tr>`;
         }
         table.innerHTML = cos;
+        const { info: inf } = data;
+        for (let i = 2; i <= inf.pages; i++) {
+            const responsive = await fetch(
+                `https://rickandmortyapi.com/api/character?page=${i}`
+            );
+
+            const data_more = await responsive.json();
+            const { results: res } = data_more;
+
+            for (const key of res) {
+                const { imagen, nombre, estado, especie } = getchar(key);
+
+                cos += `
+                <tr>
+                    <td><img src="${imagen}" alt="${nombre}"></td>
+                    <td>${nombre}</td>
+                    <td >${especie}</td>
+                    <td class='${estado}'>${estado}</td>
+                </tr>`;
+            }
+            table.innerHTML = cos;
+        }
     } catch (error) {
         console.error(error);
     }
@@ -44,8 +69,9 @@ const getCaracters = async () => {
 
 getCaracters();
 
-function getchar({ name, status, species }) {
+function getchar({ image, name, status, species }) {
     const coso = {
+        imagen: image,
         nombre: name,
         estado: status,
         especie: species,
