@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  font-size: 2rem;
+}
+
+table{
+  border-collapse: collapse;
+  background: rgb(214, 245, 255);
+}
+
+td{
+  border: 1px solid black;
+  width: 7rem;
+  height: 7rem;
+
+}
+
+table p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 2rem;
+  opacity: 0;
+}
