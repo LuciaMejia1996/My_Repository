@@ -19,7 +19,6 @@ const fregmant = document.createDocumentFragment();
 const cuerpo = document.querySelector('body');
 const cabezera = document.createElement('header');
 
-let barcos = 5;
 let barcos_res = 5;
 
 // creando parte points
@@ -48,9 +47,8 @@ for (let i = 0; i < 5; i++) {
     const numb = NumberRandom();
     for (let x = 0; x < 5; x++) {
         const td = document.createElement('td');
-        if (x === numb && barcos > 0) {
+        if (x === numb) {
             td.innerHTML = '<p class="barco">🚢</p>';
-            barcos--;
         }
         tr.append(td);
     }
@@ -62,8 +60,6 @@ cuerpo.append(fregmant);
 
 const puntacion = document.querySelector('header > .points');
 const vida = document.querySelector('header > .life');
-
-console.log(puntacion.textContent);
 
 function NumberRandom() {
     const numS = Math.round(Math.random() * 4);
