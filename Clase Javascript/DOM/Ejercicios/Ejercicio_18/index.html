@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Regístrate o entra</h1>
+  </header>
+  <section>
+    <h2>Regístrate</h2>
+    <form id="register">
+      <ul>
+        <li>
+          <label for="user">Nombre de usuario:</label>
+          <input type="text" name="user" id="user" required>
+        </li>
+        <li>
+          <label for="pass">Contraseña:</label>
+          <input type="password" id="pass" name="pass" required>
+        </li>
+        <li>
+          <label for="repeat">Repetir contraseña:</label>
+          <input type="password" id="repeat" name="repeat" required>
+        </li>
+        <li>
+          <label for="color">Color favorito:</label>
+          <input type="color" name="color" id="color" required>
+        </li>
+        <li>
+          <p class="notifiqued"></p>
+        </li>
+      </ul>
+
+      <button>Registrarse</button>
+      <button type="reset">Limpiar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Entra</h2>
+    <form id="login">
+      <ul>
+        <li>
+          <label for="userL">Nombre de usuario:</label>
+          <input type="text " id="userL" name="user" required>
+        </li>
+        <li>
+          <label for="passL">Contraseña</label>
+          <input type="password" is="passL" name="passL" required>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="notifiqued_log"></p>
+        </li>
+      </ul>
+      <button>Login</button>
+      <button type="reset">Limpiar</button>
+    </form>
+  </section>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
