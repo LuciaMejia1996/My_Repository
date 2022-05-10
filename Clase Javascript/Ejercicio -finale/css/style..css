@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+
+.question {
+    grid-area: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 246, 246);
+    border-bottom: 1px solid gray;
+}
+
+.question > p {
+    font-size: 2.8vmin;
+    font-weight: bold;
+}
+
+.part2 {
+    grid-area: 2;
+    display: grid;
+    grid-template-columns: 20vw 1fr 20vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(228, 218, 218);
+}
+
+.part2 > .skip{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 > .skip > button {
+    width: 10vmin;
+    height: 5vmin;
+    border: 0;
+    font-size: 2.5vmin;
+    background-color: rgb(60, 60, 153);
+    color: white;
+    font-weight: bold;
+}
+
+.part2 > .respuesta{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 > .respuesta > p{
+    font-size: 3.5vmin;
+    font-weight: bold;
+}
+
+.part2 > .img{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 > .img > img {
+    width: 10vw;
+}
+
+.part2 > .point{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.part2 > .point > .circulo {
+    width: 10vmin; 
+    height: 10vmin;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #7a12b6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.res {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    justify-items: center;
+    grid-row-start: 3;
+    gap: 1vw;
+    margin: 0;
+    background-color: rgb(228, 218, 218);
+
+}
+
+.res > div.res1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+    height: 15vh;
+    background-color: red ;
+}
+
+
+
+.res > div.res1 > .triangulo{
+    margin-left: 2vw;
+    width: 4vw;
+    height: 4vw;
+    margin-bottom: -1vw;
+    border-left: 5vmin solid transparent;
+    border-right: 5vmin solid transparent;
+    border-bottom: 8vmin solid rgb(247, 247, 247);}
+
+.res > div.res1 > p,
+.res > div.res2 > p,
+.res > div.res3 > p,
+.res > div.res4 > p{
+    margin-right: 8vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.res > div.res2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+    height: 15vh;
+    background-color: blue;
+}
+
+.res > div.res2 > .ovalo{
+    margin-left: 2vw;
+    width: 6vmin; 
+    height: 6vmin; 
+    border: 3px solid rgb(255, 255, 255); 
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.res > div.res3{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 45vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(163, 163, 42);
+}
+
+.res > div.res3 > .circulo{
+    margin-left: 2vw;  
+    width: 8vmin; 
+    height: 8vmin;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.res > div.res4{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 45vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.res > div.res4 > .cuadrado{
+    margin-left: 2vw;
+    width: 7.5vmin; 
+    height: 7.5vmin; 
+    background: #f2f2f3;
+}
+
+.res > div.res1,
+.res > div.res2{
+    margin-bottom: -5vw;
+}
+
+.res > div.res3,
+.res > div.res4 {
+    margin-bottom: 2vh;
+}
+
+
+
+/*Me dejo este comentario pa no perderme*/
+
+@media (max-width: 450px) {
+
+ .question > p {
+    font-size: 1.0vw;
+    font-weight: bold;
+}
+    
+
+.res > div.res3,
+.res > div.res4 {
+    margin-bottom: 6vh;
+}
+
+.part2 > .skip > button {
+    width: 30vmin;
+    height: 10vmin;
+    border: 0;
+    margin-right: 2vmin;
+    font-size: 2.5vmin;
+    background-color: rgb(60, 60, 153);
+    color: white;
+    font-weight: bold;
+}
+
+.res > div.res1 > p,
+.res > div.res2 > p,
+.res > div.res3 > p,
+.res > div.res4 > p{
+    margin-right: 4vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+.part2 > .point > .circulo {
+    width: 15vmin; 
+    height: 15vmin;
+    margin-left: 1vmin;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #7a12b6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+}
