@@ -17,7 +17,7 @@
 body{
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 4vw 38vw 10vw 80vw 1vw 1fr;
+    grid-template-rows: 4vw 38vw 10vw 40vw 1vw 1fr;
     grid-template-columns:  1fr 1fr 1fr 1fr;
 }
 
