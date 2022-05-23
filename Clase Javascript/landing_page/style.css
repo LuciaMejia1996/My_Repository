@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url(./fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 4vw 38vw 10vw 80vw 1vw 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+
+body > h1:first-of-type {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background-color: #4F4D53;
+    color: white;
+    font-family:'Roboto Black';
+
+}
+
+body > h1:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    padding-bottom: 7vw;
+    font-size: 7vw;
+    color: #4F4D53;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    font-family:'Roboto Black';
+    background-image: url(./media/img_hero.jpg);
+}
+
+body > h2 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: 2vw;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 2vw;
+    margin-left: 16vw;
+    font-family:'Roboto Black';
+    padding-left: 7.5vw;
+    font-size: 5vw;
+    color: #E8BE02;
+}
+
+body > p{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    height: 10vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 20px;
+    width: 60vw;
+    margin-left: 24vw;    
+    color: #4F4D53;
+    font-family: 'Roboto Regular';
+}
+
+body > div.separator {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color:  #E8BE02;
+}
+
+body > div.info {
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #4F4D53;
+
+}
+
